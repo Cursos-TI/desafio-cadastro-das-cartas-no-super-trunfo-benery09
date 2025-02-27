@@ -9,6 +9,8 @@ int main (){
     float area1;
     float PIB1;
     int pontos_turisticos1;
+    float densidade_populacional1;
+    float PIB_per_Capita1;
 
     // declarar as variaveis da segunda carta.
     char estado2;
@@ -18,6 +20,8 @@ int main (){
     float area2;
     float PIB2;
     int pontos_turisticos2;
+    float densidade_populacional2;
+    float PIB_per_Capita2;
 
     // aqui estamos pedindos as informações da primeira carta e armazenando-as.
 
@@ -44,8 +48,8 @@ int main (){
 
     // Após todas as perguntas feitas, vamos confirmar o armazenamento e partir para a 2 carta.
 
-    printf("Todas as informações da primeira carta foram armazenadas.\n");
-    printf("Vamos agora pegar as informações da segunda carta.");
+    printf("\n\nTodas as informações da primeira carta foram armazenadas.\n");
+    printf("Vamos agora pegar as informações da segunda carta.\n\n");
 
     printf("Vamos pegar as informações da segunda carta\nDiga o estado:\n");
     scanf(" %c", &estado2);
@@ -67,12 +71,22 @@ int main (){
 
     printf("Diga agora o número de pontos turísticos:\n");
     scanf("%d", &pontos_turisticos2);
+    
+    // Agora vamos calcular o PIB per capita e a densidade populacional.
+
+    densidade_populacional1 = populacao1 / area1;
+    PIB_per_Capita1 = PIB1 / populacao1;
+
+    densidade_populacional2 = populacao2 / area2;
+    PIB_per_Capita2 = PIB2 / populacao2;
+     
+
 
     // Agora so precisamos mostrar as cartas em sequencia.
 
-    printf("\nCarta 1:\nEstado: %c\nCodigo: %s\nNome da cidade: %s\nPopulação: %d\nÁrea da cidade: %f\nPIB: %f\nPontos Turísticos: %d\n\n\n", estado1, codigo1, cidade1, populacao1, area1, PIB1, pontos_turisticos1 );
+    printf("\nCarta 1:\nEstado: %c\nCodigo: %s\nNome da cidade: %s\nPopulação: %d\nÁrea da cidade: %.2f\nPIB: %.2f\nPontos Turísticos: %d\nDensidade Populacional: %.2f\nPib Per Capita: %.2f\n\n\n", estado1, codigo1, cidade1, populacao1, area1, PIB1, pontos_turisticos1, densidade_populacional1, PIB_per_Capita1 );
 
-    printf("Carta 2:\nEstado: %c\nCodigo: %s\nNome da cidade: %s\nPopulação: %d\nÁrea da cidade: %f\nPIB: %f\nPontos Turísticos: %d", estado2, codigo2, cidade2, populacao2, area2, PIB2, pontos_turisticos2 );
+    printf("Carta 2:\nEstado: %c\nCodigo: %s\nNome da cidade: %s\nPopulação: %d\nÁrea da cidade: %.2f\nPIB: %.2f\nPontos Turísticos: %d\nDensidade Populacional: %.2f\nPib Per Capita: %.2f\n\n\n", estado2, codigo2, cidade2, populacao2, area2, PIB2, pontos_turisticos2, densidade_populacional2, PIB_per_Capita2 );
 
 
     return 0;

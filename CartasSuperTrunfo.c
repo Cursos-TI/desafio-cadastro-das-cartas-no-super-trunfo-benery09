@@ -5,7 +5,7 @@ int main (){
     char estado1;
     char codigo1[30];
     char cidade1[32];
-    int população1;
+    int populacao1;
     float area1;
     float PIB1;
     int pontos_turisticos1;
@@ -14,7 +14,7 @@ int main (){
     char estado2;
     char codigo2[25];
     char cidade2[26];
-    int população2;
+    int populacao2;
     float area2;
     float PIB2;
     int pontos_turisticos2;
@@ -31,7 +31,7 @@ int main (){
     scanf("%s", cidade1);
 
     printf("Diga a população da cidade:\n");
-    scanf("%d", &população1);
+    scanf("%d", &populacao1);
 
     printf("Diga a área da cidade:\n");
     scanf("%f", &area1);
@@ -57,7 +57,7 @@ int main (){
     scanf("%s", cidade2);
 
     printf("Diga a população da cidade:\n");
-    scanf("%d", &população2);
+    scanf("%d", &populacao2);
 
     printf("Diga a área da cidade:\n");
     scanf("%f", &area2);
@@ -70,9 +70,9 @@ int main (){
 
     // Agora so precisamos mostrar as cartas em sequencia.
 
-    printf("\nCarta 1:\nEstado: %c\nCodigo: %s\nNome da cidade: %s\nPopulação: %d\nÁrea da cidade: %f\nPIB: %f\nPontos Turísticos: %d\n\n\n", estado1, codigo1, cidade1, população1, area1, PIB1, pontos_turisticos1 );
+    printf("\nCarta 1:\nEstado: %c\nCodigo: %s\nNome da cidade: %s\nPopulação: %d\nÁrea da cidade: %f\nPIB: %f\nPontos Turísticos: %d\n\n\n", estado1, codigo1, cidade1, populacao1, area1, PIB1, pontos_turisticos1 );
 
-    printf("Carta 2:\nEstado: %c\nCodigo: %s\nNome da cidade: %s\nPopulação: %d\nÁrea da cidade: %f\nPIB: %f\nPontos Turísticos: %d", estado2, codigo2, cidade2, população2, area2, PIB2, pontos_turisticos2 );
+    printf("Carta 2:\nEstado: %c\nCodigo: %s\nNome da cidade: %s\nPopulação: %d\nÁrea da cidade: %f\nPIB: %f\nPontos Turísticos: %d", estado2, codigo2, cidade2, populacao2, area2, PIB2, pontos_turisticos2 );
 
 
     return 0;

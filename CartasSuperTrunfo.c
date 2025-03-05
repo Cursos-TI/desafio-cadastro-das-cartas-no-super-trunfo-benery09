@@ -111,6 +111,9 @@ int main (){
         float atributo2;
         int escolha_atributo1;
         int escolha_atributo2;
+
+        //Escolha do atributo para comparar.
+
         printf("Escolha o primeiro atributo para comparar:\n");
         printf("1 - População\n");
         printf("2 - Área\n");
@@ -150,7 +153,9 @@ int main (){
             printf("Opção inválida\n");
             return 1;
         }
-
+        
+        //Escolha do segundo atributo para comparar.
+        
         printf("Escolha o segundo atributo para comparar:\n");
 
         switch (escolha_atributo1)
@@ -360,6 +365,8 @@ int main (){
                 return 1;
         }
 
+        // Soma dos Atributos
+
         printf("Agora iremos somar os atributos de cada jogador e ver quem venceu!\n");
 
         float valor_do_atributo_primeira1;
@@ -424,6 +431,8 @@ int main (){
 
         char vencedor[30];
 
+        // Definir vencedor
+
         if (soma1 > soma2) {
             strcpy(vencedor, "Jogador 1");
         } else if (soma1 < soma2) {
@@ -431,7 +440,9 @@ int main (){
         } else {
             strcpy(vencedor, "Empate");
         }
-    
+        
+        //Divulgação dos resultados.
+
         printf("\nNome do País 1: %s \n", cidade1);
         printf("Nome do País 2: %s \n", cidade2);
 
